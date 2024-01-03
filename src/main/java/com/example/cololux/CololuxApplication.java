@@ -9,7 +9,6 @@ public class CololuxApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CololuxApplication.class, args);
-		System.out.println("");
 	}
 
 }
