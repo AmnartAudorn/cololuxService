@@ -1,14 +1,13 @@
-package com.example.cololux;
+package com.cololux.service;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CololuxApplication {
+public class ColoLuxApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CololuxApplication.class, args);
+		SpringApplication.run(ColoLuxApplication.class, args);
 	}
 
 }

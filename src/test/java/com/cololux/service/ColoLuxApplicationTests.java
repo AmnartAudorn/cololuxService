@@ -1,10 +1,10 @@
-package com.example.cololux;
+package com.cololux.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CololuxApplicationTests {
+class ColoLuxApplicationTests {
 
 	@Test
 	void contextLoads() {
