@@ -22,7 +22,7 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String email;
+    private String username;
     private String password;
 
     @Enumerated(EnumType.STRING)
@@ -35,7 +35,7 @@ public class User implements UserDetails {
     @Override
     public String getUsername() {
         // email in our case
-        return email;
+        return username;
     }
 
     @Override

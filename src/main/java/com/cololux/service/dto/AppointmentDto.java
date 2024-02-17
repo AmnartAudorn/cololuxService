@@ -15,24 +15,19 @@ public class AppointmentDto {
     private String appointmentId;
     private String name;
     private String nickName;
-    private String birthday;
     private String email;
     private String phone;
-    private String address;
-    private double price;
+    private String details;
 
     public AppointmentDto(String appointmentId, String name,
-                          String nickName, String birthday,
-                          double price, String email,
-                          String phone, String address) {
+                          String nickName, String email,
+                          String phone, String details) {
         super();
         this.appointmentId = appointmentId;
         this.name = name;
         this.nickName = nickName;
         this.email = email;
-        this.price = price;
         this.phone = phone;
-        this.address = address;
-        this.birthday = birthday;
+        this.details = details;
     }
 }

@@ -19,10 +19,8 @@ public class AppointmentService {
         }
         appointment.setName(appointmentDto.getName());
         appointment.setNickName(appointmentDto.getNickName());
-        appointment.setPrice(appointmentDto.getPrice());
         appointment.setEmail(appointmentDto.getEmail());
-        appointment.setAddress(appointmentDto.getAddress());
-        appointment.setBirthday(appointmentDto.getBirthday());
+        appointment.setDetails(appointmentDto.getDetails());
         appointment.setPhone(appointmentDto.getPhone());
         appointment = appointmentRepository.save(appointment);
         appointmentDto.setAppointmentId(appointment.getAppointmentId());

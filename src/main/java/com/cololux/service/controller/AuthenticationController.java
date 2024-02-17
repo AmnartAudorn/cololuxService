@@ -1,7 +1,7 @@
 package com.cololux.service.controller;
 
 import com.cololux.service.dto.request.SignUpRequest;
-import com.cololux.service.dto.request.SigninRequest;
+import com.cololux.service.dto.request.SignInRequest;
 import com.cololux.service.dto.response.JwtAuthenticationResponse;
 import com.cololux.service.service.AuthenticationService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<JwtAuthenticationResponse> signin(@RequestBody SigninRequest request) {
+    public ResponseEntity<JwtAuthenticationResponse> signin(@RequestBody SignInRequest request) {
         return ResponseEntity.ok(authenticationService.signin(request));
     }
 }

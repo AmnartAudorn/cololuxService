@@ -13,13 +13,13 @@ import java.io.Serializable;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserDto implements Serializable {
     private String userId;
-    private String email;
+    private String username;
     private String password;
 
-    public UserDto(String userId, String email, String password) {
+    public UserDto(String userId, String username, String password) {
         super();
         this.userId = userId;
-        this.email = email;
+        this.username = username;
         this.password = password;
     }
 }
